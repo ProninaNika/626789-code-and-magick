@@ -47,8 +47,8 @@ window.renderStatistics = function (ctx, names, times) {
     return Math.random().toFixed(2);
   };
 
-  for (var i = 0; i < names.length;i++) {
-    ctx.fillStyle = names[i] === 'Вы' ?'rgba(255, 0, 0, 1)' : 'rgba(0, 0, 255, ' + getRandomColor() + ')';
+  for (var i = 0; i < names.length; i++) {
+    ctx.fillStyle = names[i] === 'Вы' ? 'rgba(255, 0, 0, 1)' : 'rgba(0, 0, 255, ' + getRandomColor() + ')';
     ctx.fillRect(BAR_X + i * (BAR_WIDTH + BAR_GAP), BAR_Y, BAR_WIDTH, (-BAR_HEIGHT * times[i]) / maxTime);
     ctx.fillStyle = '#000';
     ctx.fillText(names[i], BAR_X + i * (BAR_WIDTH + BAR_GAP), BAR_Y + GAP);
