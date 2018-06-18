@@ -35,8 +35,8 @@ var getMaxElement = function (arr) {
 };
 
 var getRandomColor = function () {
-    return Math.random().toFixed(2);
-  };
+  return Math.random().toFixed(2);
+};
 
 var printBars = function (ctx, names, times, maxTime) {
   for (var i = 0; i < names.length; i++) {
@@ -47,10 +47,10 @@ var printBars = function (ctx, names, times, maxTime) {
     }
     ctx.fillRect(BAR_X + i * (BAR_WIDTH + BAR_GAP), BAR_Y, BAR_WIDTH, (-BAR_HEIGHT * times[i]) / maxTime);
     ctx.fillStyle = '#000';
-    ctx.fillText(names[i], BAR_X + i * (BAR_WIDTH + BAR_GAP), BAR_Y + GAP);
+    ctx.fillText(names[i], BAR_X + i * (BAR_WIDTH + BAR_GAP), BAR_Y + GAP + 5);
     ctx.fillText(Math.round(times[i]), BAR_X + i * (BAR_WIDTH + BAR_GAP), BAR_Y + (-BAR_HEIGHT * times[i]) / maxTime - 0.5 * GAP);
   }
-}
+};
 
 window.renderStatistics = function (ctx, names, times) {
   renderCloud(ctx, CLOUD_X + GAP, CLOUD_Y + GAP, 'rgba(0, 0, 0, 0.7)');
