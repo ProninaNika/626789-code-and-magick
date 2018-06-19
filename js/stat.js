@@ -61,4 +61,4 @@ window.renderStatistics = function (ctx, names, times) {
   var maxTime = getMaxElement(times);
 
   printBars(ctx, names, times, maxTime);
-};
+}
