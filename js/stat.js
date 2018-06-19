@@ -59,6 +59,7 @@ window.renderStatistics = function (ctx, names, times) {
   renderText(ctx, 'Список результатов:', TEXT_X, 3 * GAP + TEXT_GAP);
 
   var maxTime = getMaxElement(times);
+}
 
-  printBars(ctx, names, times, maxTime);
-};
+printBars(ctx, names, times, maxTime);
+
