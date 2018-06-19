@@ -21,7 +21,7 @@ var renderName = function () {
   var randomSurnames = Math.floor(Math.random() * SURNAMES.length);
   var fullName = NAMES[randomNames] + ' ' + SURNAMES[randomSurnames];
   return fullName;
-}
+};
 
 // генерация цвета мантии
 var renderCoat = function () {
