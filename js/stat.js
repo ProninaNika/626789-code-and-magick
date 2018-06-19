@@ -32,6 +32,7 @@ var getMaxElement = function (arr) {
     }
   }
   return MaxElement;
+};
 
 var getRandomColor = function () {
   return Math.random().toFixed(2);
